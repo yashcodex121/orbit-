@@ -1,0 +1,30 @@
+{
+  "name": "Telegram Music Bot",
+  "description": "Pyrogram Music Downloader Bot",
+  "repository": "https://github.com/yourusername/musicbot",
+  "logo": "https://telegra.ph/file/6e8b8a8c2d8e0f5b5c0c2.jpg",
+  "keywords": ["telegram", "music", "yt-dlp", "pyrogram"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API HASH",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB URI",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  }
+}
